@@ -1,0 +1,41 @@
+*{
+    margin: 0
+}
+
+main{
+    text-align: center;
+    margin-top: 32px;
+}
+
+.btn{
+    height: 32px;
+    width: 104px;
+    border-radius: 8px;
+    border-style: none;
+    margin-right: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-start{
+    background-color: #4CAF50;
+    
+}
+
+.btn-record{
+    background-color: #3F51B5;
+}
+
+.btn-reset{
+    background-color: #9E9E9E;
+}
+
+.records{
+    margin-top: 16px;
+    font-size: 1.2em;
+}
+
+.timer-container{
+    margin: 16px 0;
+    font-size: 1.5em;
+}
