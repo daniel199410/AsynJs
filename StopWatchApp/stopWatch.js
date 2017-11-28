@@ -10,7 +10,7 @@ var red = "#F44336"
 setUp()
 
 function deleteRecords(){
-    document.getElementById("records").innerHTML = ""
+    location.reload()
 }
 
 function setUp(){
