@@ -6,6 +6,14 @@ document.getElementById("inputButton").addEventListener('click', function(){
     processSearch(document.getElementById("input").value)
 })
 
+document.getElementById("inputButtonType").addEventListener('click', function(){
+    searchByType(document.getElementById("inputType").value)
+})
+
+document.getElementById("inputButtonPrice").addEventListener('click', function(){
+    searchByPrice(document.getElementById("inputPrice").value)
+})
+
 function createTableHeader(tableId){
     var table = document.getElementById(tableId)
     var tr = document.createElement("tr")
@@ -80,5 +88,21 @@ function processSearch(searchedId){
         updateTable("similarTable", similarArray)
     }).catch(function(val){
         console.log(val)
+    })
+}
+
+function searchByType(type){
+    window.api.searchProductsByType(type).then(function(value){
+        updateTable("similarTable", value)
+    }).catch(function(value){
+        console.log(value)
+    })
+}
+
+function searchByPrice(price){
+    window.api.searchProductsByPrice(price).then(function(value){
+        updateTable("similarTable", value)
+    }).catch(function(value){
+        console.log(value)
     })
 }

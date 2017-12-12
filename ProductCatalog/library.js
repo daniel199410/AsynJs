@@ -60,7 +60,7 @@
         return promise
     }
 
-    function searchProductsByPrice(price, difference){
+    function searchProductsByPrice(price, difference = 50){
         var promise = new Promise(function(resolve, reject){
             var i = 0
             var productsSamePrice = []
