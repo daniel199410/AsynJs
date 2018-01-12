@@ -1,0 +1,44 @@
+.img-wrapper img{
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.emotions{
+    padding-left: 16px;
+}
+
+.emotion{
+    display: flex;
+}
+
+.results{
+    margin-top: 24px;
+    display: flex;
+}
+
+.emotion p{
+    margin-top: 0;
+}
+
+.pr-8{
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+    img{
+        max-width: 255px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    img{
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    img{
+        max-width: 192px;
+    }
+}
